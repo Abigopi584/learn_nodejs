@@ -14,7 +14,7 @@ readeable.on('data',function(chunk){
     writable.write(chunk);
     });
 
-// pipe() method is provided by node JS that replaces the entire on(). It takes a readable chunk from read Stream
+// pipe() method is provided by node JS that replaces the entire .on(). It takes a readable chunk from read Stream
 // and writes it to write stream.
 readeable.pipe(writable_pipe);
 
